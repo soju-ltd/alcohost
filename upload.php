@@ -1,5 +1,7 @@
 <?php
 
+include "./backend/config.php";
+
 $targetdir = "uploads/";
 
 
@@ -43,8 +45,19 @@ if($uploadok == 0){
 
     if(move_uploaded_file($_FILES["FILE_UPLOAD"]["tmp_name"],$target)){
 
-        $uploadlink = "https://alcoholic.host/uploads/". htmlspecialchars($_FILES["FILE_UPLOAD"]["name"]);
+        $sql = "INSERT INTO file_list (file_name,upload_date) VALUES ( ' " . htmlspecialchars($_FILES["FILE_UPLOAD"]["name"]). "','". time(). "')";
+      // echo $sql;
 
+        if ($conn->query($sql) === TRUE) {
+           // echo "New record created successfully";
+           // $uploadlink = "https://alcoholic.host/uploads/". htmlspecialchars($_FILES["FILE_UPLOAD"]["name"]);
+            //http://127.0.0.1/alco_host/
+            $uploadlink = "http://127.0.0.1/alco_host/uploads/". htmlspecialchars($_FILES["FILE_UPLOAD"]["name"]);
+            $msg2echo = "Upload success";
+
+          } else {
+            $uploadlink = "Error: " . $sql . "<br>" . $conn->error;
+          }
 
     }else{
 
