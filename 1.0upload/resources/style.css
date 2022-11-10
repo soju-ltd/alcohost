@@ -1,0 +1,43 @@
+body{
+    /*background-color: cornflowerblue;*/
+	background-image: url("background.gif") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+div{
+
+    text-align: center;
+    background-color: blueviolet;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+
+}
+
+
+h1{
+
+
+}
+
+
+.colour {
+   color: pink;
+
+  }
+
+  .colour a{
+
+    color: pink;
+
+  }
+
+
+.epik-button{
+
+    padding:20px;
+
+}

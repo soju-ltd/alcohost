@@ -7,21 +7,6 @@ $returnlink = $msg2echo;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://alcoholic.host/">
-<meta property="og:title" content="Alcoholic Host | 30 (ish) minute file hosting">
-<meta property="og:description" content="Because you've got to be drunk to want to use this">
-<!--<meta property="og:image" content="https://i.kym-cdn.com/photos/images/newsfeed/001/966/703/359.jpg">-->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://alcoholic.host/">
-<meta property="twitter:title" content="Alcoholic Host | 30 (ish) minute file hosting">
-<meta property="twitter:description" content="Because you've got to be drunk to want to use this">
-<!--<meta property="twitter:image" content="https://i.kym-cdn.com/photos/images/newsfeed/001/966/703/359.jpg">-->
-
-
-
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

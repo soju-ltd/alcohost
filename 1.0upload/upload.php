@@ -1,7 +1,7 @@
 <?php
 
 include "./backend/config.php";
-include "./backend/file_monitor.php";
+
 $targetdir = "uploads/";
 
 
@@ -40,7 +40,7 @@ if (file_exists($target)){
 
 
 if($uploadok == 0){
-    $msg2echo = "Upload Failed 1 | File with same name may already exist on server"
+    $msg2echo = "Upload Failed"
 ;}else{
 
     if(move_uploaded_file($_FILES["FILE_UPLOAD"]["tmp_name"],$target)){
@@ -54,14 +54,14 @@ if($uploadok == 0){
             //http://127.0.0.1/alco_host/
             $uploadlink = "http://127.0.0.1/alco_host/uploads/". htmlspecialchars($_FILES["FILE_UPLOAD"]["name"]);
             $msg2echo = "Upload success";
-            file_check_pub();
+
           } else {
             $uploadlink = "Error: " . $sql . "<br>" . $conn->error;
           }
 
     }else{
 
-        $msg2echo =  "Upload failed 2";
+        $msg2echo =  "Upload failed";
 
 
     }
