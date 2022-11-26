@@ -2,10 +2,11 @@
 
 //sql connection
 
+//user config
 $servername = "localhost";
-$user = "root";
+$user = "";
 $passwd = "";
-$dbname = "alcoholic_db";
+$dbname = "";
 
 // Create connection
 $conn = mysqli_connect($servername, $user, $passwd,$dbname);
